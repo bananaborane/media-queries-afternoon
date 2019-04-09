@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* RESET CSS END */
+
+/* .background {
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+} */
+
+/* body {
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-size: 100px;
+  background-repeat: no-repeat;
+} */
+
+body {
+  position: relative;
+  background-color: lightgray;
+}
+
+.background-image {
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+}
+
+.nav-section {
+  border: 2px darkorange dashed;
+  background-color: darkslategray;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  padding: 0px 40px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.title {
+  font-size: 2.5rem;
+  padding-left: 40px;
+  color: orange;
+}
+
+.each-nav-link {
+  margin: 0px 18px;
+}
+
+.main-section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  height: 700px;
+}
+
+.welcome {
+  font-size: 3.3rem;
+  font-style: italic;
+}
+
+.its-nice-to-meet-you {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.tell-me-more{
+  padding-top: 50px;
+
+}
+
+.tell-me-more-button {
+  font-size: 1.7rem;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu {
+ width: 100%;
+ height: 10.5rem;
+ background-color: darkslategray;
+ position: absolute;
+ top: -10.5rem;
+ left: 0px;
+ transition: .88s;
+ z-index: -2;
+}
+
+.slide {
+ top: 0
+}
+
+.ham-link-container {
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  bottom: 0px;
+  color: white;
+
+}
+
+.each-ham-nav-link {
+  padding: 20px;
+}
+
+.services-section{
+  width: 100%;
+  height: 500px;
+  border: darkorange 2px dashed;
+}
+
+.services-section {
+  padding-top: 9rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.services-text {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.services p {
+  font-size: 1.2rem;
+  padding-top: 12px;
+}
+
+.yellow-icons-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.e-commerce {
+  width: 200px;
+  padding: 20px;
+}
+.responsive-design {
+  width: 200px;
+  padding: 20px;
+}
+.web-security {
+  width: 200px;
+  padding: 20px;
+}
+
+
+
+
+
+
+@media (max-width: 990px){
+  .its-nice-to-meet-you {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    padding-left: 40px;
+  }
+
+  .link-container {
+    display: none;
+  }
+
+
+  .hamburger {
+    display: block;
+    padding-right: 90px;
+  }
+
+  .main-section{
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px){
+
+  .welcome{
+    font-size: 2rem;
+  }
+  .its-nice-to-meet-you {
+    font-size: 4rem;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .hamburger{
+    font-size: 0.8rem;
+    padding-right: 35px;
+  }
+  .main-section{
+    height: 350px;
+  }
+}
+
+@media (max-width: 410px){
+  .hamburger{
+    padding-right: 10px;
+  }
+  .title{
+    padding-left: 0px;
+  }
+  .welcome {
+    font-size: 1.8rem;
+  }
+  .its-nice-to-meet-you {
+    font-size: 3rem;
+  }
+  .tell-me-more-button {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
